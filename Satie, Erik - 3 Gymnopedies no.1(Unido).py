@@ -14,7 +14,7 @@ durations_array2 =[QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN ,DHN, QN, 
 
 # Creamos la primera partitura con un tempo de 100 BPM
 score = Score("Satie Gymnopedies no.1 (100 BPM)", 100)
-part_vibraphone = Part(VIBRAPHONE, 3)  # Usamos VIBRAPHONE como instrumento
+part_vibraphone = Part(VIBRAPHONE, 1)  # Usamos VIBRAPHONE como instrumento
 
 # Creamos la primera frase para las notas y duraciones a 100 BPM
 phrase_vibraphone = Phrase()
@@ -204,7 +204,7 @@ duraciones_1 = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN,
 duraciones_2 = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
 
 
-part_cello = Part(CELLO, 1)  # Usamos CELLO como instrumento
+part_cello = Part(CELLO, 2)  # Usamos CELLO como instrumento
 
 phrase_cello = Phrase()
 
@@ -217,7 +217,7 @@ for i in range(len(notas_2)):
 part_cello.addPhrase(phrase_cello)
 
 
-flutePart = Part(FLUTE , 2) # create flute part
+flutePart = Part(FLUTE , 3) # create flute part
  
 phrase_flute = Phrase(0.0)      # create the phrase
  
@@ -225,13 +225,13 @@ phrase_flute = Phrase(0.0)      # create the phrase
 flute_notes    = [REST, REST, REST, REST]
 durationList   = [DHN, DHN,  DHN, DHN]
 
-flute_notes    += [REST, FF5, A5, G5, FF5, CS5, B4, CF5, D5]
+flute_notes    += [REST, FS5, A5, G5, FS5, CS5, B4, CS5, D5]
 durationList   += [QN, QN, QN, QN, QN, QN, QN, QN, QN]
 
 flute_notes    += [A4, F4]
 durationList   += [DHN, DHN * 4]
 
-flute_notes    += [REST, FF5, A5, G5, FF5, CS5, B4, CF5, D5]
+flute_notes    += [REST, FS5, A5, G5, FS5, CS5, B4, CS5, D5]
 durationList   += [QN, QN, QN, QN, QN, QN, QN, QN, QN]
 
 flute_notes    += [A4, CF5, FS5, E4]
@@ -274,7 +274,6 @@ phrase_flute.addNoteList(flute_notes_part2, durationList_part2)
 
  
 flutePart.addPhrase(phrase_flute)   # add phrases to part
-
 
 score.addPart(flutePart)
 
