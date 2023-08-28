@@ -55,10 +55,10 @@ for i in range(0, width, 32):
         instrument_volumes.append(max(min(pixel[1], 15), 50))
 
 for i in range(len(piano_notes)-len(piano_volumes)):
-    piano_volumes.append(127)
+    piano_volumes.append(0)
 
 for i in range(len(instrument_notes)-len(instrument_volumes)):
-    instrument_volumes.append(127)
+    instrument_volumes.append(0)
 
 piano_part = Part('Piano', 0) 
 instrument_part = Part(CELLO, 1) 
