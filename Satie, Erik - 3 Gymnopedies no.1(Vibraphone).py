@@ -11,13 +11,13 @@ DONE: ARREGLAR DURACIONES
 '''
 
 # mis arrays
-notes_array = [F5, A5, G5, F5, C5, B4, C5, D5, A4, B3, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, B5, A4, F4, A4, G3, A4, B4, C4, E5, B5, B4, B5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, B4, D5, D5, G5, F5, A4, B4, C5, D5, G5, C5, D5, E5, F4, G4, C5, D5] 
+notes_array = [REST, REST, REST, REST, F5, A5, G5, F5, C5, B4, C5, D5, A4, B3, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, B5, A4, F4, A4, G3, A4, B4, C4, E5, B5, B4, B5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, B4, D5, D5, G5, F5, A4, B4, C5, D5, G5, C5, D5, E5, F4, G4, C5, D5] 
 
-notes_array2 = [F5, A5, G5, F5, C5, B4, C5, D5, A4, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, D5, A4, F4, A4, G3, A4, B4, C5, E5, D5, B4, D5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, E5, D5, B4, D5, D5, G5, F5, B4, C5, F5, E5, D5, C5, E5, D5, C5, F4, G4, E4, F4]
+notes_array2 = [REST, REST, REST, REST, F5, A5, G5, F5, C5, B4, C5, D5, A4, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, D5, A4, F4, A4, G3, A4, B4, C5, E5, D5, B4, D5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, E5, D5, B4, D5, D5, G5, F5, B4, C5, F5, E5, D5, C5, E5, D5, C5, F4, G4, E4, F4]
 
-durations_array = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN] 
+durations_array = [WN, WN, WN, WN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN] 
 
-durations_array2 =[QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN ,DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
+durations_array2 =[WN, WN, WN, WN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN ,DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
 
 # Creamos la primera partitura con un tempo de 100 BPM
 score1 = Score("Satie Gymnopedies no.1 (100 BPM)", 100)

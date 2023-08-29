@@ -1,16 +1,14 @@
 from music import *
 from time import sleep
 
+# mis arrays vibrafono
+notes_array = [REST, REST, REST, REST, F5, A5, G5, F5, C5, B4, C5, D5, A4, B3, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, B5, A4, F4, A4, G3, A4, B4, C4, E5, B5, B4, B5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, B4, D5, D5, G5, F5, A4, B4, C5, D5, G5, C5, D5, E5, F4, G4, C5, D5] 
 
+notes_array2 = [REST, REST, REST, REST, F5, A5, G5, F5, C5, B4, C5, D5, A4, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, D5, A4, F4, A4, G3, A4, B4, C5, E5, D5, B4, D5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, E5, D5, B4, D5, D5, G5, F5, B4, C5, F5, E5, D5, C5, E5, D5, C5, F4, G4, E4, F4]
 
-# mis arrays
-notes_array = [F5, A5, G5, F5, C5, B4, C5, D5, A4, B3, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, B5, A4, F4, A4, G3, A4, B4, C4, E5, B5, B4, B5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, B4, D5, D5, G5, F5, A4, B4, C5, D5, G5, C5, D5, E5, F4, G4, C5, D5] 
+durations_array = [DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN] 
 
-notes_array2 = [F5, A5, G5, F5, C5, B4, C5, D5, A4, A3, B3, A3, F5, A5, G5, F5, C5, B4, C5, D5, A4, F4, A4, G3, A4, B4, C5, E5, D5, B4, D5, C5, B4, D5, D5, E5, F5, G5, A5, C5, D5, E5, D5, B4, D5, D5, G5, F5, B4, C5, F5, E5, D5, C5, E5, D5, C5, F4, G4, E4, F4]
-
-durations_array = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN] 
-
-durations_array2 =[QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN ,DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
+durations_array2 =[DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN ,DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
 
 # Creamos la primera partitura con un tempo de 100 BPM
 score = Score("Satie Gymnopedies no.1 (100 BPM)", 100)
@@ -196,12 +194,12 @@ fa.addPhrase(piano_fa_phrase)
 
 
 
-# Tus arrays
-notas_1 = [F4, A4, G4, F4, C4, B3, C4, D4, A3, F3, F3, F3, F3, F4, A4, G4, F4, C4, B3, C4, D4, A3, C4, F4, E3, A3, B3, C4, E4, D4, B3, D4, C4, B3, D4, D4, E4, F4, G4, A4, C4, D4, E4, D4, B3, D4, D4, G4, F4, B3, A3, B3, C4, D4, E4, C4, D4, E4, F3, G3, C4, D4]
-notas_2 = [F4, A4, G4, F4, C4, B3, C4, D4, A3, F3, F3, F3, F3, F4, A4, G4, F4, C4, B3, C4, D4, A3, C4, F4, E3, A3, B3, C4, E4, D4, B3, D4, C4, B3, D4, D4, E4, F4, G4, A4, C4, D4, E4, D4, B3, D4, D4, G4, F4, B3, C4, F4, E4, D4, C4, E4, D4, C4, F3, G3, C4, D4]
+# Mis arrays CELLO
+notas_1 = [REST, REST, REST, REST,F4, A4, G4, F4, C4, B3, C4, D4, A3, F3, F3, F3, F3, F4, A4, G4, F4, C4, B3, C4, D4, A3, C4, F4, E3, A3, B3, C4, E4, D4, B3, D4, C4, B3, D4, D4, E4, F4, G4, A4, C4, D4, E4, D4, B3, D4, D4, G4, F4, B3, A3, B3, C4, D4, E4, C4, D4, E4, F3, G3, C4, D4]
+notas_2 = [REST, REST, REST, REST, F4, A4, G4, F4, C4, B3, C4, D4, A3, F3, F3, F3, F3, F4, A4, G4, F4, C4, B3, C4, D4, A3, C4, F4, E3, A3, B3, C4, E4, D4, B3, D4, C4, B3, D4, D4, E4, F4, G4, A4, C4, D4, E4, D4, B3, D4, D4, G4, F4, B3, C4, F4, E4, D4, C4, E4, D4, C4, F3, G3, C4, D4]
 
-duraciones_1 = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
-duraciones_2 = [QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
+duraciones_1 = [DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
+duraciones_2 = [DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, DHN, DHN, DHN, 9, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, QN, QN, QN, QN, QN, QN, QN, QN, QN, 5, QN, DHN, DHN, QN, QN, QN, QN, QN, QN, QN, QN, QN, HN, QN, DHN, DHN]
 
 
 part_cello = Part(CELLO, 2)  # Usamos CELLO como instrumento
