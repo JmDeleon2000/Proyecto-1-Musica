@@ -59,9 +59,21 @@ beethoven_sym4_durations = [1, 1, 1, 1, 1, 1, 1, 1]
 schumann_notes = [D4, C4, B3, A3, G3, F3, E3, D3]
 schumann_durations = [1, 1, 1, 1, 1, 1, 1, 1]
 
-#canons.append((canon_simplex, canon_simplex_duration))
-#canons.append((canon_simplex_mod, canon_simplex_duration_mod))
-#canons.append((allroverscio, allroverscio_duration))
+#NuevosCanonsAndres
+canon_min7 = [A4, C5, E5, G5, D4, F4, A4, C5, G4, B4, D5, F5, C4, E4, G4, B4]
+canon_min7_duration = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+canon_quintas = [C4, G4, A4, E5, D4, A4, B4, F5]
+canon_quintas_duration = [1, 1, 1, 1, 1, 1, 1, 1]
+
+canon_melodico = [C4, E4, F4, G4, A4, G4, F4, E4]
+canon_melodico_duration = [1, 1, 1, 1, 1, 1, 1, 1]
+
+#canons jorge
+canons.append((canon_simplex, canon_simplex_duration))
+canons.append((canon_simplex_mod, canon_simplex_duration_mod))
+canons.append((allroverscio, allroverscio_duration))
+#canons renato
 canons.append((pachelbel_notes, pachelbel_durations))
 canons.append((bach_notes, bach_durations))
 canons.append((handel_notes, handel_durations))
@@ -71,6 +83,11 @@ canons.append((senleches_notes, senleches_durations))
 canons.append((mozart_notes, mozart_durations))
 canons.append((beethoven_sym4_notes, beethoven_sym4_durations))
 canons.append((schumann_notes, schumann_durations))
+
+#nuevos canons
+canons.append((canon_min7, canon_min7_duration))
+canons.append((canon_quintas, canon_quintas_duration))
+canons.append((canon_melodico, canon_melodico_duration))
 
 score = Score("Untitled", 200)  # Aqui se establece el tempo a 100 BPM
 
