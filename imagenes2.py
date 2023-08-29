@@ -157,3 +157,5 @@ score.addPart(instrument_part)
 score.addPart(new_instrument_part)
 
 Play.midi(score)
+
+Write.midi(score, "mi_canon.mid")
