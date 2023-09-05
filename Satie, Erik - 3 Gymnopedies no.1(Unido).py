@@ -295,4 +295,3 @@ score.addPart(part_cello)
 
 # Reproducimos la segunda partitura
 Play.midi(score)
-
